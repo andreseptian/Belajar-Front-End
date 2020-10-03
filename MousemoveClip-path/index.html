@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <title>CSS Clip-path Mousmeove Effects 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+      <h2>Hello</h2>
+      <h2>How it is?</h2>
+      <div class="circle"></div>
+    </section>
+    <script type="text/javascript">
+        var pos = document.documentElement;
+          pos.addEventListener("mousemove", e => {
+          pos.style.setProperty('--x', e.clientX + "px");
+          pos.style.setProperty('--y', e.clientY + "px");
+        });
+    </script>
+</body>
+</html>
+
